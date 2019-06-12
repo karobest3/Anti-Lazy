@@ -1,0 +1,45 @@
+/*
+ * Empty Stylesheet file.
+ */
+#searchBtn{
+    -fx-border-width: 3px;
+    -fx-background-radius: 500;
+    
+}
+.mainFxmlClass {
+
+}
+.root{
+    -fx-background-color: #262626;
+}
+
+.table-view{
+   -fx-background-color: transparent;
+}
+
+.table-view:focused{
+    -fx-background-color: transparent;
+}
+
+
+.table-view .column-header,
+.table-view .column-header-background .filler {
+    -fx-background-color:  white; 
+}
+.table-view .column-header .label{
+   -fx-text-fill: black;
+   -fx-font-weight: bold; 
+   -fx-alignment: CENTER_LEFT;
+}
+.table-view .cell{
+   -fx-cell-size: 35;
+  -fx-alignment: center-left;
+  -fx-border-color: white;
+  -fx-text-fill: black;
+  -fx-alignment: CENTER_LEFT;
+   
+}
+.table-row-cell:selected {
+   -fx-background-color: #a3a3a3; 
+   -fx-text-background-color:  #6622CC;     
+}

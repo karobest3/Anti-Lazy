@@ -1,0 +1,465 @@
+/* 
+    Created on : Feb 20, 2019, 10:53:07 PM
+    Author     : Doan Thanh Nhan
+*/
+
+*{
+    -fx-primarycolor: #6747CD;
+    -fx-secondarycolor: #20bf6b;
+    -fx-primarytextcolor: #a3a3a3;
+    /*    -fx-primarycolor: #2A2E37;
+        -fx-secondarycolor: #FFFF8D;
+        -fx-primarytextcolor: #B2B2B2;*/
+    -fx-checkoutcolor: #dc3545;
+    -fx-availablecolor: #28a745;
+    -fx-reservedcolor: #007bff;
+    -fx-occupiedcolor: #fd7e14;
+    -fx-fault-color: #dc3545;
+    -fx-warning-color: #ffc107;
+    /*Bootstrap color*/
+    -fx-blue-color: #007bff;
+    -fx-red-color: #dc3545;
+    -fx-white-color: #fff;
+    -fx-green-color: #28a745;
+    -fx-indigo-color: #6610f2;
+    -fx-purple-color: #6f42c1;
+    -fx-pink-color: #e83e8c;
+    -fx-orange-color: #fd7e14;
+    -fx-teal-color: #20c997;
+    -fx-cyan-color: #17a2b8;
+    -fx-yellow-color: #ffc107;
+
+}
+
+/*GENERAL NODE*/
+/*.root{
+    -fx-background-color: -fx-primarycolor;
+}*/
+
+.anchor-pane{
+    -fx-background-image: url("../images/ServiceType/mardan_palace_hotel.jpg");
+}
+.progress-bar > .bar {
+    -fx-background-color: linear-gradient(
+        from 0px .75em to .75em 0px,
+        repeat,
+        -fx-accent 0%,
+        -fx-accent 49%,
+        derive(-fx-accent, 30%) 50%,
+        derive(-fx-accent, 30%) 99%
+        );
+}
+.progress-indicator .indicator {
+    -fx-background-color: transparent ;
+}
+.glyph-icon{
+    -fx-fill: -fx-primarycolor;
+}
+.jfx-glyhp-icon{
+    -fx-fill: -fx-checkoutcolor;
+}
+.jfx-glyhp-icon-finish{
+    -fx-fill: -fx-primarycolor;
+}
+.jfx-combo-box-fault{
+    -jfx-focus-color:-fx-checkoutcolor;
+    -jfx-unfocus-color:-fx-checkoutcolor;
+}
+.parent{
+    -fx-background-color: white;
+
+}
+.slidebar{
+    -fx-background-color: -fx-primarycolor;
+}
+.forgetBtn{
+    -fx-text-fill: -fx-primarytextcolor;
+
+}
+.forgetBtn:hover{
+    -fx-text-fill: -fx-primarycolor;
+    -fx-underline: true;
+    -fx-cursor: hand;
+}
+.loginBtn{
+    -fx-background-color: -fx-primarycolor;
+    -fx-text-fill: -fx-primarytextcolor;
+    -fx-background-radius: 3px;
+}
+.loginBtn:hover{
+    -fx-background-color: transparent;
+    -fx-background-radius: 3px;
+    -fx-text-fill: -fx-primarycolor;
+    -fx-border-color: -fx-primarycolor;
+    -fx-border-width: 1px;
+    -fx-border-style: solid;
+    -fx-border-radius: 3px;
+    -fx-cursor: hand;
+}
+.btn-red-color{
+    -fx-background-color: -fx-red-color;
+    -fx-text-fill: -fx-white-color;
+    -fx-background-radius: 3px;
+}
+.btn-red-color:hover{
+    -fx-background-color: transparent;
+    -fx-background-radius: 3px;
+    -fx-text-fill: -fx-red-color;
+    -fx-border-color: -fx-red-color;
+    -fx-border-width: 1px;
+    -fx-border-style: solid;
+    -fx-border-radius: 3px;
+    -fx-cursor: hand;
+}
+.btn-red-color:hover .glyph-icon{
+    -fx-fill: -fx-red-color;
+}
+.glyph-icon-white {
+    -fx-fill: -fx-white-color;
+}
+
+.btn-warning-color{
+    -fx-background-color: -fx-warning-color;
+    -fx-text-fill: -fx-white-color;
+    -fx-background-radius: 3px;
+}
+.btn-warning-color:hover{
+    -fx-background-color: transparent;
+    -fx-background-radius: 3px;
+    -fx-text-fill: -fx-warning-color;
+    -fx-border-color: -fx-warning-color;
+    -fx-border-width: 1px;
+    -fx-border-style: solid;
+    -fx-border-radius: 3px;
+    -fx-cursor: hand;
+}
+.btn-warning-color:hover .glyph-icon{
+    -fx-fill: -fx-warning-color;
+}
+.btn-warning-color-update{
+    -fx-background-color: -fx-primarycolor;
+    -fx-text-fill: -fx-white-color;
+    -fx-background-radius: 3px;
+}
+.btn-warning-color-update:hover{
+    -fx-background-color: transparent;
+    -fx-background-radius: 3px;
+    -fx-text-fill: -fx-primarycolor;
+    -fx-border-color: -fx-primarycolor;
+    -fx-border-width: 1px;
+    -fx-border-style: solid;
+    -fx-border-radius: 3px;
+    -fx-cursor: hand;
+}
+.btn-green-color{
+    -fx-background-color: -fx-green-color;
+    -fx-text-fill: -fx-white-color;
+    -fx-background-radius: 3px;
+}
+.btn-green-color:hover{
+    -fx-background-color: transparent;
+    -fx-background-radius: 3px;
+    -fx-text-fill: -fx-green-color;
+    -fx-border-color: -fx-green-color;
+    -fx-border-width: 1px;
+    -fx-border-style: solid;
+    -fx-border-radius: 3px;
+    -fx-cursor: hand;
+}
+.btn-green-color:hover .glyph-icon{
+    -fx-fill: -fx-green-color;
+}
+.btn-blue-color{
+    -fx-background-color: -fx-blue-color;
+    -fx-text-fill: -fx-white-color;
+    -fx-background-radius: 3px;
+}
+.btn-blue-color:hover{
+    -fx-background-color: transparent;
+    -fx-background-radius: 3px;
+    -fx-text-fill: -fx-blue-color;
+    -fx-border-color: -fx-blue-color;
+    -fx-border-width: 1px;
+    -fx-border-style: solid;
+    -fx-border-radius: 3px;
+    -fx-cursor: hand;
+}
+.btn-blue-color:hover .glyph-icon{
+    -fx-fill: -fx-blue-color;
+}
+.text-field {
+    -fx-prompt-text-fill: -fx-primarytextcolor;
+    -fx-text-fill: black;
+    -jfx-focus-color: -fx-primarycolor;
+    -jfx-unfocus-color: -fx-primarycolor;
+}
+.text-field-fault {
+    -jfx-focus-color: -fx-red-color;
+    -jfx-unfocus-color: -fx-red-color;
+}
+.text-area {
+    -fx-prompt-text-fill: -fx-primarytextcolor;
+    -fx-text-fill: black;
+    -jfx-focus-color: -fx-primarycolor;
+    -jfx-unfocus-color: -fx-primarycolor;
+}
+#passIcon{
+    -fx-fill: -fx-primarycolor;
+}
+.label-text{
+    -fx-text-fill:-fx-primarycolor;    
+}
+.label-with-image{
+    -fx-text-fill:-fx-primarycolor;
+    -fx-border-color: -fx-primarycolor;
+}
+.label-color{
+    -fx-text-fill: -fx-primarytextcolor;
+}
+.image-view:border{
+    -fx-border-color: -fx-primarycolor;    
+}
+/*REGISTRATION FORM*/
+
+.jfx-combo-box{
+    -jfx-focus-color: -fx-primarycolor; 
+    -jfx-unfocus-color: -fx-primarycolor;
+    -fx-prompt-text-fill: -fx-primarytextcolor;   
+    -fx-font-size : 14px;
+    -fx-font-weight: bold;
+    /*    -jfx-focus-color: -fx-secondary;
+        -fx-text-fill: derive(-fx-secondary, 20%);
+        
+        -fx-fill: -fx-secondary;*/
+}
+/*.jfx-combo-box .cell {
+    -fx-background-color:  -fx-primary;
+    -fx-text-fill: -fx-secondary;    
+}*/
+.jfx-combo-box-fault{
+    -jfx-focus-color: -fx-fault-color; 
+    -jfx-unfocus-color: -fx-fault-color;
+}
+.jfx-date-picker{
+    -jfx-default-color: -fx-primarycolor;
+    -fx-prompt-text-fill: -fx-primarytextcolor;    
+    -fx-font-size : 14px;
+    -fx-font-weight: bold;    
+}
+/*Make prompt text float*/
+.jfx-date-picker > .jfx-text-field {
+    -jfx-label-float: true;
+}
+
+/*ROOM STATUS FORM*/
+.glyph-icon-room-status {
+    -fx-fill: -fx-primarytextcolor;
+}
+.loginBtn:hover .glyph-icon{
+    -fx-fill: -fx-primarycolor;
+}
+.hbox-background-room-status{
+
+}
+.boderPane-room-status{
+    -fx-border-color: -fx-primarycolor;
+    -fx-border-width: 2px;
+    -fx-effect: dropshadow(three-pass-box, -fx-primarycolor, 10.0, 0.0, 3.0,  3.0);
+    /*-fx-effect: dropshadow(three-pass-box, -fx-primarycolor, 10, 0, 0, 0);*/
+    -fx-background-color: linear-gradient(to bottom, #f2f2f2, #d4d4d4);
+}
+.label-roomNumber-room-status{
+    -fx-text-fill: -fx-primarycolor;
+    -fx-font-size : 14px;
+    -fx-font-weight: bold;
+}
+.label-roomCheckOut-room-status{
+    -fx-text-fill: -fx-checkoutcolor;
+    -fx-font-size : 14px;
+    -fx-font-weight: bold;
+}
+
+.label-roomAvailable-room-status{
+    -fx-text-fill: -fx-availablecolor;
+    -fx-font-size : 14px;
+    -fx-font-weight: bold;
+}
+.label-roomOccupied-room-status{
+    -fx-text-fill: -fx-occupiedcolor;
+    -fx-font-size : 14px;
+    -fx-font-weight: bold;
+}
+.label-roomReserved-room-status{
+    -fx-text-fill: -fx-reservedcolor;
+    -fx-font-size : 14px;
+    -fx-font-weight: bold;
+}
+.label-GuestName-room-status{
+    -fx-text-fill: -fx-primarycolor;
+    -fx-font-size : 18px;
+    -fx-font-weight: bold;
+}
+.label-NotClean-Status{
+    -fx-text-fill: -fx-checkoutcolor;
+    -fx-font-size : 15px;
+    /*-fx-font-weight: regular;*/
+}
+.label-Primary-Status{
+    -fx-text-fill: -fx-primarycolor;
+    -fx-font-size : 15px;
+}
+.glyph-icon-clean-repair-inprogress-status{
+    -fx-fill: -fx-checkoutcolor;
+}
+.glyph-icon-primary{
+    -fx-fill: -fx-primarycolor;
+}
+.label-task-status{
+    -fx-text-fill: -fx-primarycolor;
+}
+
+/*CHECK OUT FORM*/
+.button-checkout{
+    -fx-background-color: -fx-primarycolor;
+    -fx-text-fill: -fx-primarytextcolor;
+    -fx-background-radius: 3px;
+}
+.button-checkout:hover{
+    -fx-background-color: transparent;
+    -fx-background-radius: 3px;
+    -fx-text-fill: -fx-primarycolor;
+    -fx-border-color: -fx-primarycolor;
+    -fx-border-width: 1px;
+    -fx-border-style: solid;
+    -fx-border-radius: 3px;
+    -fx-cursor: hand;
+}
+
+.glyph-icon-checkout {
+    -fx-fill: -fx-primarytextcolor;
+}
+.button-checkout:hover .glyph-icon{
+    -fx-fill: -fx-primarycolor;
+}
+
+/*LIST SERVICE TYPE FORM*/
+.glyph-525icons-add{
+    -fx-fill: -fx-primarycolor;
+}
+.glyph-525icons-edit{
+    -fx-fill: -fx-occupiedcolor;
+}
+.glyph-525icons-remove{
+    -fx-fill: -fx-fault-color;
+}
+.glyph-525icons-refresh{
+    -fx-fill: -fx-secondarycolor;
+}
+
+/*ABOUT US*/
+.background-about-us{
+    -fx-background-color: #2A2E37;
+}
+.label-about-us{
+    -fx-text-fill: #FFFF8D;    
+}
+.image-view-about-us {
+    -fx-effect: dropshadow(three-pass-box, #FFFF8D, 10, 0, 0, 0);
+    -fx-stroke-width: 2.0; 
+    -fx-padding: 10;
+    -fx-background-color: firebrick;
+    -fx-background-radius: 5;
+    -fx-border-radius: 20 20 20 20;
+}
+.label-about-us:hover .image-view-about-us {
+    -fx-effect: dropshadow(three-pass-box, #00ffff, 30, 0, 0, 0);
+    -fx-stroke-width: 2.0; 
+    -fx-padding: 10;
+    -fx-background-color: firebrick;
+    -fx-background-radius: 5;
+    -fx-border-radius: 20 20 20 20;
+}
+
+.label-about-us:hover .image-view-about-us:border {
+    -fx-border-color: #6747CD;
+    -fx-border-style: solid;
+    -fx-border-width: 5;
+    -fx-border-radius: 20 20 20 20;
+    -fx-background-radius: 5;
+}
+/*TableView Default*/
+/*.table-view{
+    -fx-background-color: derive(-fx-primarycolor, 10%);
+    -fx-font-size: 16px; 
+    -fx-border-color: derive(-fx-secondary, -60%);
+}
+.table-view:focused{
+    -fx-background-color: derive(-fx-primarycolor, 20%);
+}
+.table-row-cell {
+    -fx-cell-size: 40px;
+}
+.table-view .column-header-background{
+    -fx-background-color: -fx-primary;
+}
+.table-view .column-header-background .label{
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+.table-view .column-header {
+    -fx-background-color: transparent;
+}
+.table-view .table-cell{
+    -fx-text-fill: white;
+}
+.table-row-cell:focused, .table-cell:focused{
+    -fx-text-fill: -fx-primary;
+}
+.table-row-cell{
+    -fx-background-color: -fx-primary;
+    -fx-border-color: transparent;
+    -fx-table-cell-border-color: transparent;
+}
+.table-column{
+    -fx-alignment: CENTER;  
+}
+.table-row-cell:even{
+    -fx-background-color: derive(-fx-primary, 10%);
+}
+.table-row-cell:selected {
+    -fx-background-color: -fx-secondary;
+    -fx-text-fill: -fx-primary;
+    -fx-background-insets: 0;
+}
+.table-row-cell:selected .table-cell{
+    -fx-text-fill: -fx-primary;
+}
+.placeholder .label{
+    -fx-text-fill: white;
+}
+.table-view > .virtual-flow > .scroll-bar:vertical,
+.table-view > .virtual-flow > .scroll-bar:vertical > .track,
+.table-view > .virtual-flow > .scroll-bar:vertical > .track-background, 
+.table-view > .virtual-flow > .scroll-bar:horizontal,
+.table-view > .virtual-flow > .scroll-bar:horizontal > .track,
+.table-view > .virtual-flow > .scroll-bar:horizontal > .track-background {
+    -fx-background-color: transparent;
+}
+.table-view > .virtual-flow > .scroll-bar > .increment-button, 
+.table-view > .virtual-flow > .scroll-bar > .decrement-button {
+    -fx-text-fill: white;
+}
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb{
+    -fx-background-color: derive(-fx-primary, 60%);
+    -fx-border-color: transparent;
+    -fx-background-radius: 5em;
+}
+.table-view .filler{
+    -fx-fill: -fx-primary;
+    -fx-background-color: -fx-primary;
+}
+.table-context
+{
+    -fx-base: -fx-primary;
+}*/

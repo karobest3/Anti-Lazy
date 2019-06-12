@@ -1,0 +1,158 @@
+*{
+    -fx-primarycolor: #6747CD;
+    -fx-secondarycolor: #20bf6b;
+    -fx-primarytextcolor: #a3a3a3;
+}
+.glyph-icon{
+    -fx-fill: -fx-primarycolor;
+}
+.parent{
+    -fx-background-color: white;
+
+}
+.slidebar{
+    -fx-background-color: -fx-primarycolor;
+}
+.forgetBtn{
+    -fx-text-fill: -fx-primarytextcolor;
+
+}
+.signupBtn:hover{
+    -fx-text-fill: -fx-primarycolor;
+    -fx-underline: true;
+    -fx-cursor: hand;
+}
+.signupBtn{
+    -fx-text-fill: #7577b5;
+
+}
+.forgetBtn:hover{
+    -fx-text-fill: -fx-primarycolor;
+    -fx-underline: true;
+    -fx-cursor: hand;
+}
+.loginBtn{
+    -fx-background-color: -fx-primarycolor;
+    -fx-text-fill: -fx-primarytextcolor;
+    -fx-background-radius: 3px;
+}
+.loginBtn:hover{
+    -fx-background-color: transparent;
+    -fx-background-radius: 3px;
+    -fx-text-fill: -fx-primarycolor;
+    -fx-border-color: -fx-primarycolor;
+    -fx-border-width: 1px;
+    -fx-border-style: solid;
+    -fx-border-radius: 3px;
+    -fx-cursor: hand;
+}
+.text-field {
+    -fx-prompt-text-fill: -fx-primarytextcolor;
+    -fx-text-fill: black;
+}
+#passIcon{
+    -fx-fill: -fx-primarycolor;
+}
+.label-text{
+    -fx-text-fill:-fx-primarycolor;
+}
+.label-color{
+    -fx-text-fill: -fx-primarytextcolor;
+}
+
+/*REGISTRATION FORM*/
+
+.jfx-combo-box{
+    -jfx-focus-color:#6747CD;
+    -jfx-unfocus-color:#6747CD;
+    -fx-prompt-text-fill: -fx-primarytextcolor;   
+    -fx-font-size : 14px;
+    -fx-font-weight: bold;
+    /*    -jfx-focus-color: -fx-secondary;
+        -fx-text-fill: derive(-fx-secondary, 20%);
+        
+        -fx-fill: -fx-secondary;*/
+}
+/*.jfx-combo-box .cell {
+    -fx-background-color:  -fx-primary;
+    -fx-text-fill: -fx-secondary;    
+}*/
+.jfx-date-picker{
+    -fx-prompt-text-fill: -fx-primarytextcolor;    
+    -fx-font-size : 14px;
+    -fx-font-weight: bold;  
+}
+.jfx-date-picker > .jfx-text-field {
+    -jfx-label-float: true;   
+}
+.jfx-date-picker-fix > .jfx-text-field {
+    -jfx-label-float: true;
+    -fx-prompt-text-fill: -fx-primarytextcolor;
+    -fx-text-fill: -fx-primarytextcolor;
+}
+.jfx-glyhp-icon{
+    -fx-fill: #FF2625;
+}
+.jfx-glyhp-icon-finish{
+    -fx-fill: #6447cd;
+}
+.jfx-combo-box-fault{
+    -jfx-focus-color:#FF2625;
+    -jfx-unfocus-color:#FF2625;
+    
+}
+/*.jfx-combo-box .cell {
+    -jfx-focus-color:#6747CD;
+    -jfx-unfocus-color:#6747CD;
+}*/
+.jfx-glyhp-icon-refresh:hover{
+    -fx-fill: blue;
+}
+.jfx-glyhp-icon-refresh{
+    -fx-fill: #6447cd;
+}
+
+.dialog-pane{
+  -fx-border-color:black;
+  -fx-border-width:2.0px;
+ }
+
+/**Costumization of The Bar where the buttons are located**/
+.dialog-pane > .button-bar > .container {
+  -fx-background-color:black;
+}
+
+.dialog-pane > .content.label {
+   -fx-padding: 0.5em 0.5em 0.5em 0.5em;
+   -fx-background-color: yellow;
+   -fx-text-fill:black;
+   -fx-font-size:15.0px;
+}
+
+/**Costumization of DialogPane Header**/
+.dialog-pane:header .header-panel {
+  -fx-background-color: black;
+}
+
+.dialog-pane:header .header-panel .label{
+  -fx-background-color: yellow;
+  -fx-background-radius:10px;
+  -fx-text-fill:black;
+  -fx-font-size:15.0px;
+}
+
+
+/**Costumization of Buttons**/
+.dialog-pane .button{
+   -fx-background-color:black;
+   -fx-text-fill:white;
+   -fx-wrap-text: true;
+   -fx-effect: dropshadow( three-pass-box, yellow, 10.0, 0.0, 0.0, 0.0);
+   -fx-cursor:hand;
+ }
+
+.dialog-pane .button:hover{     
+  -fx-background-color:white;
+  -fx-text-fill:black;
+  -fx-font-weight:bold; 
+ }
